@@ -1,0 +1,3 @@
+- In recent versions of Coq, there is [Scheme Boolean Equality] that produces
+  only the boolean comparison function (no proof!)
+- can we use native ints to speed up certain things?

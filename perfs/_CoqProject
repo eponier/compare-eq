@@ -1,0 +1,8 @@
+-R . compare_eq
+
+types.v
+decide_equality.v
+scheme_equality.v
+deriving.v
+equations.v
+elpi_derive.v

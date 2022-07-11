@@ -1,0 +1,16 @@
+*~
+*.d
+*.annot
+*.vo
+*.vok
+*.vos
+*.vio
+*.cache
+*.bak
+*.glob
+*.aux
+*.lock
+*.native
+
+Makefile
+Makefile.conf
