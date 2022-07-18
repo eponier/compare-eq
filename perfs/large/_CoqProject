@@ -1,8 +1,8 @@
 -R . compare_eq
 
-types.v
-decide_equality.v
+type.v
 scheme_equality.v
-deriving.v
+decide_equality.v
 equations.v
+deriving.v
 elpi_derive.v
