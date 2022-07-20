@@ -10,7 +10,7 @@ Require Import type.
 #[only(eqbcorrect,param1_trivial)] derive nat.
 #[only(eqbcorrect,param1_trivial)] derive bool.
 Elpi derive.param1 Nat.eqb.
-Time #[only(eqbcorrect)] derive t.
+#[only(eqbcorrect),verbose] derive t.
 
 Succeed Check t_eqb_correct.
 Succeed Check t_eqb_refl.

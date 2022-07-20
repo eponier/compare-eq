@@ -6,7 +6,7 @@ Require Import type.
    fast_eqb. I used a different switch to install this version of coq-elpi,
    I hope it does not distort the benchmark. *)
 
-Time #[only(eqbcorrect)] derive t.
+#[only(eqbcorrect),verbose] derive t.
 
 Succeed Check t_eqb_correct.
 Succeed Check t_eqb_refl.
