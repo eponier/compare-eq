@@ -8,3 +8,22 @@ Require Import type.
 #[only(eqOK),verbose] derive t.
 
 Fail Check t_eq_OK.
+
+Module M.
+
+Section S.
+
+Inductive dummy (n : nat) := C0 : bool -> dummy.
+
+Variable (n:nat).
+
+Inductive t := | C : dummy n -> t.
+
+#[only(eqOK),verbose] derive dummy.
+#[only(eqOK),verbose] derive t.
+
+Fail Check t_eqOK.
+
+End S.
+
+End M.

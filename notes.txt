@@ -3,3 +3,5 @@
 - can we use native ints to speed up certain things?
 - could be do better with size types? Indeed, currently, to pass the guard
   checker, we need to be more verbose than what we could expect.
+
+- cf. https://github.com/coq/coq/issues/8517
