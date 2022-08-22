@@ -15,7 +15,11 @@ Proof. Time exact [derive nored eqMixin for t]. Time Qed.
 
 End nored.
 
+(* Too slow
+
 Optimize Heap. (* try to reduce the impact of making two different things in the same file *)
 
 Time Definition t_eqMixin := [derive eqMixin for t].
 Canonical t_eqType := EqType t t_eqMixin.
+
+*)
