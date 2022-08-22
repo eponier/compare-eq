@@ -10,3 +10,9 @@ Proof.
   - decide equality.
   - decide equality.
 Defined.
+
+Fixpoint t_eq_dec' A (eq_dec : forall (x y : A), {x = y} + {x <> y}) x : forall y : t A,
+  {x = y} + {x <> y}.
+Proof.
+  decide equality. decide equality.
+Defined.
