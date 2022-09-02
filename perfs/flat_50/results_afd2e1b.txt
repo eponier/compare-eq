@@ -1,0 +1,40 @@
+COQDEP VFILES
+COQC type.v
+COQC elpi_fast_eqb.v
+Skipping derivation isK
+Skipping derivation projK
+Derivation param1
+Derivation param1 took 0.299251
+Skipping derivation param1_congr
+Derivation param1_inhab
+Derivation param1_inhab took 0.045328
+Skipping derivation param1_trivial
+Derivation param1_functor
+Derivation param1_functor took 0.088782
+Derivation induction
+Derivation induction took 0.061413
+Skipping derivation eq
+Skipping derivation eq_param1
+Skipping derivation bcongr
+Skipping derivation eqK
+Skipping derivation eqcorrect
+Skipping derivation eqOK
+Skipping derivation param2
+Skipping derivation invert
+Skipping derivation idx2inv
+Skipping derivation lens
+Skipping derivation lens_laws
+Derivation tag
+Derivation tag took 0.047637
+Derivation eqType_ast
+Derivation eqType_ast took 0.003953
+Derivation fields
+Derivation fields took 1.585826
+Derivation eqb
+Derivation eqb took 0.775514
+Derivation eqbcorrect
+Derivation eqbcorrect took 0.399908
+t_eqb_correct
+     : forall x : t, eqb_correct_on t_eqb x
+t_eqb_refl
+     : forall x : t, eqb_refl_on t_eqb x
