@@ -1,8 +1,8 @@
-From elpi.apps Require Import derive.
+From elpi.apps Require Import feqb.
 
 Require Import type.
 
-#[only(eqbcorrect),verbose] derive t.
+Time #[verbose] feqb t.
 
 Succeed Check t_eqb_correct.
 Succeed Check t_eqb_refl.
