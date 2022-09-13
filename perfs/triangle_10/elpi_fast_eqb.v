@@ -1,4 +1,4 @@
-From elpi.apps Require Import derive.
+From elpi.apps Require Import feqb.
 
 Require Import type.
 
