@@ -1,0 +1,79 @@
+COQDEP VFILES
+COQC type.v
+COQC scheme_equality.v
+Finished transaction in 588.241 secs (579.33u,6.76s) (successful)
+COQC decide_equality.v
+Finished transaction in 223.827 secs (220.284u,2.509s) (successful)
+Finished transaction in 43.008 secs (42.591u,0.31s) (successful)
+COQC equations.v
+COQC equations.v
+Finished transaction in 11326.583 secs (11276.107u,6.656s) (successful)
+COQC deriving.v
+Finished transaction in 3582.412 secs (3568.797u,4.172s) (successful)
+Finished transaction in 8.56 secs (8.54u,0.s) (successful)
+Finished transaction in 7.21 secs (7.192u,0.s) (successful)
+COQC elpi_derive.v
+Derivation isK
+Derivation isK took 3.038670
+Derivation projK
+Derivation projK took 0.001288
+Derivation param1
+Derivation param1 took 0.341113
+Derivation param1_congr
+Derivation param1_congr took 0.191822
+Derivation param1_inhab
+Derivation param1_inhab took 0.020458
+Derivation param1_trivial
+Derivation param1_trivial took 0.333996
+Derivation param1_functor
+Derivation param1_functor took 0.019862
+Derivation induction
+Derivation induction took 0.033981
+Derivation eq
+Derivation eq took 3.271264
+Skipping derivation eq_param1
+Derivation bcongr
+Derivation bcongr took 0.210603
+Derivation eqK
+Derivation eqK took 18.143437
+Derivation eqcorrect
+Derivation eqcorrect took 0.021161
+Derivation eqOK
+Derivation eqOK took 0.000354
+Skipping derivation param2
+Skipping derivation invert
+Skipping derivation idx2inv
+Skipping derivation lens
+Skipping derivation lens_laws
+Skipping derivation tag
+Skipping derivation eqType_ast
+Skipping derivation fields
+Skipping derivation eqb
+Skipping derivation eqbcorrect
+t_eq_OK
+     : forall s1 : t, eq_axiom_at t t_eq s1
+COQC elpi_fast_eqb.v
+Derivation param1
+Derivation param1 took 0.544669
+Derivation param1_inhab
+Derivation param1_inhab took 0.017443
+Derivation param1_functor
+Derivation param1_functor took 0.012710
+Derivation induction
+Derivation induction took 0.029984
+Derivation tag
+Derivation tag took 0.024078
+Derivation eqType_ast
+Derivation eqType_ast took 0.004769
+Derivation fields
+Derivation fields took 0.356952
+Derivation eqb
+Derivation eqb took 0.128726
+Derivation eqbcorrect
+correct 0.990621 refl 0.012822
+Derivation eqbcorrect took 2.732242
+Finished transaction in 3.913 secs (3.799u,0.103s) (successful)
+t_eqb_correct
+     : forall x : t, eqb_correct_on t_eqb x
+t_eqb_refl
+     : forall x : t, eqb_refl_on t_eqb x
