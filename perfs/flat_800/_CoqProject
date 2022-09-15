@@ -1,0 +1,5 @@
+-R . compare_eq
+
+type.v
+elpi_derive.v
+elpi_fast_eqb.v

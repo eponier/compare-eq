@@ -1,0 +1,70 @@
+COQDEP VFILES
+COQC type.v
+COQC decide_equality.v
+Finished transaction in 1515.884 secs (1477.142u,31.684s) (successful)
+Finished transaction in 955.392 secs (277.375u,153.717s) (successful)
+COQC elpi_derive.v
+Derivation isK
+Derivation isK took 9.277005
+Derivation projK
+Derivation projK took 0.002521
+Derivation param1
+Derivation param1 took 0.743881
+Derivation param1_congr
+Derivation param1_congr took 0.399922
+Derivation param1_inhab
+Derivation param1_inhab took 0.049638
+Derivation param1_trivial
+Derivation param1_trivial took 0.901488
+Derivation param1_functor
+Derivation param1_functor took 0.043611
+Derivation induction
+Derivation induction took 0.085234
+Derivation eq
+Derivation eq took 11.851689
+Skipping derivation eq_param1
+Derivation bcongr
+Derivation bcongr took 0.435551
+Derivation eqK
+Derivation eqK took 63.245138
+Derivation eqcorrect
+Derivation eqcorrect took 0.053434
+Derivation eqOK
+Derivation eqOK took 0.000620
+Skipping derivation param2
+Skipping derivation invert
+Skipping derivation idx2inv
+Skipping derivation lens
+Skipping derivation lens_laws
+Skipping derivation tag
+Skipping derivation eqType_ast
+Skipping derivation fields
+Skipping derivation eqb
+Skipping derivation eqbcorrect
+t_eq_OK
+     : forall s1 : t, eq_axiom_at t t_eq s1
+COQC elpi_fast_eqb.v
+Derivation param1
+Derivation param1 took 0.901884
+Derivation param1_inhab
+Derivation param1_inhab took 0.038546
+Derivation param1_functor
+Derivation param1_functor took 0.027349
+Derivation induction
+Derivation induction took 0.071839
+Derivation tag
+Derivation tag took 0.052512
+Derivation eqType_ast
+Derivation eqType_ast took 0.009536
+Derivation fields
+Derivation fields took 0.815276
+Derivation eqb
+Derivation eqb took 0.245655
+Derivation eqbcorrect
+correct 2.973342 refl 0.020318
+Derivation eqbcorrect took 8.477863
+Finished transaction in 10.731 secs (10.543u,0.146s) (successful)
+t_eqb_correct
+     : forall x : t, eqb_correct_on t_eqb x
+t_eqb_refl
+     : forall x : t, eqb_refl_on t_eqb x
