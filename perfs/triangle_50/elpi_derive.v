@@ -4,6 +4,6 @@ Require Import type.
 
 (* Should we measure the time used to derive the dependencies? *)
 #[only(eqOK)] derive nat.
-#[only(eqOK),verbose] derive t.
+Time #[only(eqOK),verbose] derive t.
 
 Succeed Check t_eq_OK.
