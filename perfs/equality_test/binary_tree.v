@@ -1,6 +1,5 @@
 Require Import Recdef.
 Require Import Lia.
-(* Require Import PArith. Open Scope positive_scope. *)
 
 Inductive tree : Type :=
 | Leaf : tree
@@ -13,34 +12,14 @@ Fixpoint binary_tree c n :=
     let t := binary_tree c n in
     Node c t t
   end.
-(*
-Function binary_tree c n { wf Pos.lt n } :=
-  match n with
-  | O => Leaf
-  | S n =>
-    let p := Pos.div2 n in
-    let l := binary_tree c (n-p) in
-    let r := binary_tree c p in
-    Node c l r
-  end.
-Proof.
-  - intros; subst.
-    destruct n0.
-    + simpl. apply le_n.
-    + apply le_S.
-      apply PeanoNat.Nat.lt_div2.
-      apply le_n_S, le_0_n.
-  - intros; subst. lia.
-  - apply Wf_nat.lt_wf.
-Defined.
-*)
+
 Definition t0 := Eval vm_compute in binary_tree 0 20.
 Definition t1 := Eval vm_compute in binary_tree 1 20.
 
 From elpi.apps Require Import feqb.
 From elpi.apps Require Import derive.
 
-(* Register Inline andb. -> andb becomes lazy *)
+(* Register Inline andb. (* -> andb becomes lazy *) *)
 
 Module feqb.
 
@@ -133,9 +112,4 @@ Time Eval vm_compute in dec_eq t0 t1. (* 0,09 s *)
 Time Eval vm_compute in tree_beq t0 t0. (* 0,17 s *)
 Time Eval vm_compute in tree_beq t0 t1. (* 0,15 s*) 
 
-Require Import Extraction.
-
-Recursive Extraction tree_eqb.
-Recursive Extraction t_1024.
-
-
+(* Extraction? *)

@@ -13,11 +13,11 @@ Function binary_tree start n { wf lt n } :=
     match n - p with
     | 0 => Node start []
     | _ =>
-      let l := binary_tree (S start) (n-p) in
+      let l := binary_tree start (n-p) in
       match p with
       | 0 => Node start [l]
       | _ =>
-        let r := binary_tree (S (start+n-p)) p in
+        let r := binary_tree start p in
         Node start [l;r]
       end
     end
