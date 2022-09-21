@@ -4,7 +4,8 @@ and the features they support (indices, dependent types, ...).
 
 * Installation procedure
 
-Here are the commands that can be used to install the tools, using opam.
+Here are the commands that can be used to install the tools, using opam
+(see [https://opam.ocaml.org/]).
 
 ```
 opam switch create coq.8.16 --empty
