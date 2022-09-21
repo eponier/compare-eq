@@ -6,4 +6,4 @@ decide_equality.v
 # equations.v MEMORY OVERFLOW
 deriving.v
 # elpi_derive.v
-elpi_fast_eqb.v
+feqb.v

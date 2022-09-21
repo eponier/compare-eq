@@ -2,4 +2,4 @@
 
 type.v
 scheme_equality.v
-elpi_fast_eqb.v
+feqb.v
