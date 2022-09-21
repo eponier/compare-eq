@@ -2,8 +2,7 @@ From Equations Require Import Equations.
 
 Require Import type.
 
-(* Derive NoConfusionHom seems much slower, so we use Derive NoConfusion *)
-(* Time Equations Derive NoConfusionHom for t. *)
+(* we need to use NoConfusionHom and not NoConfusion *)
+Equations Derive Signature NoConfusionHom EqDec for t.
 
-Succeed Equations Derive Signature NoConfusion EqDec for t.
-(* Equations leaves one unsolved obligation, meaning it failed to automatically generate everything *)
+Succeed Check t_eqdec.
