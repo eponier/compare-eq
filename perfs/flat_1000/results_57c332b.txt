@@ -1,0 +1,69 @@
+COQDEP VFILES
+coq_makefile -f _CoqProject -o Makefile
+COQC type.v
+COQC elpi_derive.v
+Derivation isK
+Derivation isK took 28.333336
+Derivation projK
+Derivation projK took 0.004742
+Derivation param1
+Derivation param1 took 1.732813
+Derivation param1_congr
+Derivation param1_congr took 0.734688
+Derivation param1_inhab
+Derivation param1_inhab took 0.138391
+Derivation param1_trivial
+Derivation param1_trivial took 3.257919
+Derivation param1_functor
+Derivation param1_functor took 0.115626
+Derivation induction
+Derivation induction took 0.238385
+Derivation eq
+Derivation eq took 61.859488
+Skipping derivation eq_param1
+Derivation bcongr
+Derivation bcongr took 0.851396
+Derivation eqK
+Derivation eqK took 238.645106
+Derivation eqcorrect
+Derivation eqcorrect took 0.140896
+Derivation eqOK
+Derivation eqOK took 0.000875
+Skipping derivation param2
+Skipping derivation invert
+Skipping derivation idx2inv
+Skipping derivation lens
+Skipping derivation lens_laws
+Skipping derivation tag
+Skipping derivation eqType_ast
+Skipping derivation fields
+Skipping derivation eqb
+Skipping derivation eqbcorrect
+Finished transaction in 336.43 secs (329.633u,5.898s) (successful)
+t_eq_OK
+     : forall s1 : t, eq_axiom_at t t_eq s1
+COQC feqb.v
+Derivation param1
+Derivation param1 took 1.653880
+Derivation param1_inhab
+Derivation param1_inhab took 0.102406
+Derivation param1_functor
+Derivation param1_functor took 0.059504
+Derivation induction
+Derivation induction took 0.201025
+Derivation tag
+Derivation tag took 0.113019
+Derivation eqType_ast
+Derivation eqType_ast took 0.016121
+Derivation fields
+Derivation fields took 1.990594
+Derivation eqb
+Derivation eqb took 0.439929
+Derivation eqbcorrect
+correct 12.306353 5.503490 4.409924 refl 0.021156
+Derivation eqbcorrect took 31.539089
+Finished transaction in 36.258 secs (35.391u,0.769s) (successful)
+t_eqb_correct
+     : forall x : t, eqb_correct_on t_eqb x
+t_eqb_refl
+     : forall x : t, eqb_refl_on t_eqb x
