@@ -1,0 +1,48 @@
+COQDEP VFILES
+COQC type.v
+COQC scheme_equality.v
+Finished transaction in 926.673 secs (916.187u,3.447s) (successful)
+COQC elpi_fast_eqb.v
+Derivation param1
+Derivation param1 took 0.009065
+Derivation param1_inhab
+Derivation param1_inhab took 0.002379
+Derivation param1_functor
+Derivation param1_functor took 0.002945
+Derivation induction
+Derivation induction took 0.002403
+Derivation tag
+Derivation tag took 0.002045
+Derivation eqType_ast
+Derivation eqType_ast took 0.001276
+Derivation fields
+Derivation fields took 0.009382
+Derivation eqb
+Derivation eqb took 0.005801
+Derivation eqbcorrect
+correct 0.001671 0.001756 0.001960 refl 0.000522
+Derivation eqbcorrect took 0.010717
+Derivation param1
+Derivation param1 took 2.564034
+Derivation param1_inhab
+Derivation param1_inhab took 1.857698
+Derivation param1_functor
+Derivation param1_functor took 2.128527
+Derivation induction
+Derivation induction took 0.341994
+Derivation tag
+Derivation tag took 0.178565
+Derivation eqType_ast
+Derivation eqType_ast took 0.623868
+Derivation fields
+Derivation fields took 20.513314
+Derivation eqb
+Derivation eqb took 98.576608
+Derivation eqbcorrect
+correct 504.747310 1.841267 0.225056 refl 206.878623
+Derivation eqbcorrect took 714.397666
+Finished transaction in 841.226 secs (832.963u,1.713s) (successful)
+t_eqb_correct
+     : forall x : t, eqb_correct_on t_eqb x
+t_eqb_refl
+     : forall x : t, eqb_refl_on t_eqb x

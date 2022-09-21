@@ -1,0 +1,5 @@
+-R . compare_eq
+
+type.v
+scheme_equality.v
+elpi_fast_eqb.v
