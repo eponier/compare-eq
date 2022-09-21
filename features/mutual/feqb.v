@@ -1,6 +1,6 @@
-From elpi.apps Require Import derive.
+From elpi.apps Require Import feqb.
 
 Require Import type.
 
-Fail #[only(eqbcorrect)] derive t.
+Fail feqb t.
 (* Not Yet Implemented: API(env) mutual inductive *)

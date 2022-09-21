@@ -6,3 +6,5 @@ Require Import type.
 (* Time Equations Derive NoConfusionHom for t. *)
 
 Equations Derive NoConfusion EqDec for t.
+
+Succeed Check t_eqdec.

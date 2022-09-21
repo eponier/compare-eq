@@ -22,4 +22,6 @@ Derive NoConfusion EqDec for list.
 
 End list.
 
+Succeed Check list_eqdec.
+
 End list.
