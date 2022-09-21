@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for vector.
+Fail Scheme Equality for vector.

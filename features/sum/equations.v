@@ -1,41 +1,14 @@
 From Equations Require Import Equations.
-Set Equations With UIP.
 
-Variant wsize :=
-  | U8
-  | U16
-  | U32
-  | U64
-  | U128
-  | U256.
+Section sum.
 
-Definition wsize_size (s : wsize) : nat :=
-  match s with
-  | U8 => 8
-  | U16 => 16
-  | U32 => 32
-  | U64 => 64
-  | U128 => 128
-  | U256 => 256
-  end.
+Variable (L R : Set) (L_eqdec : EqDec L) (R_eqdec : EqDec R).
 
-Definition modulus nbits := two_power_nat nbits.
+Inductive sum : Type :=
+| inl : L -> sum| inr : R -> sum.
 
-Section test.
+Equations Derive NoConfusion EqDec for sum.
 
-Variable (nbits : wsize).
+End sum.
 
-Record word := mkWord {
-  w : Z;
-  _ : (0 <=? w)%Z && (w <? modulus (wsize_size nbits))%Z = true
-}.
-
-Equations Derive NoConfusion EqDec for positive.
-Equations Derive NoConfusion EqDec for Z.
-Equations Derive NoConfusion EqDec for word.
-
-Check word_eqdec.
-
-End test.
-
-Check word_eqdec.
+Succeed Check sum_eqdec.

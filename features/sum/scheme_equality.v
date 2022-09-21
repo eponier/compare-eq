@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for deep.
+Scheme Equality for sum.

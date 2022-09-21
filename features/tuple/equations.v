@@ -33,4 +33,4 @@ Time Equations Derive NoConfusion EqDec for tuple.
 
 End tuple.
 
-tuple_eqdec
+Succeed Check tuple_eqdec.

@@ -49,5 +49,6 @@ Variant value : Type :=
 (* Derive NoConfusionHom seems much slower, so we use Derive NoConfusion *)
 (* Time Equations Derive NoConfusionHom for t. *)
 
-Time Equations Derive NoConfusion EqDec for bool.
-Time Equations Derive NoConfusion EqDec for value.
+Equations Derive NoConfusion EqDec for bool.
+Succeed Equations Derive NoConfusion EqDec for value.
+(* 1 obligation remaining *)

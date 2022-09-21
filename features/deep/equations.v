@@ -11,12 +11,13 @@ Variable (A : Set) (A_eqdec : EqDec A).
 
 Inductive list := | nil | cons : A -> list -> list.
 
-Time Equations Derive NoConfusion EqDec for list.
+Equations Derive NoConfusion EqDec for list.
 
 Inductive option := | None | Some : A -> option.
 
-Time Equations Derive NoConfusion EqDec for option.
+Equations Derive NoConfusion EqDec for option.
 
 End list.
 
-Time Equations Derive NoConfusion EqDec for deep.
+Succeed Equations Derive NoConfusion EqDec for deep.
+(* 1 obligation remaining *)

@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for tuple.
+Fail Scheme Equality for tuple.

@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for deep.
+Fail Scheme Equality for word.

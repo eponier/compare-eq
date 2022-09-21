@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for forest.
+Fail Scheme Equality for forest.

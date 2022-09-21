@@ -1,3 +1,3 @@
 Require Import type.
 
-Scheme Equality for value.
+Fail Scheme Equality for value.

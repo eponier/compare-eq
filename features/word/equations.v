@@ -35,8 +35,6 @@ Equations Derive NoConfusion EqDec for positive.
 Equations Derive NoConfusion EqDec for Z.
 Equations Derive NoConfusion EqDec for word.
 
-Check word_eqdec.
-
 End test.
 
 Check word_eqdec.
