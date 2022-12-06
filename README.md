@@ -13,6 +13,6 @@ eval $(opam env --switch=coq.8.16)
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam switch set-invariant --formula='["coq" {>= "8.16" & < "8.17.0~"}]'
 opam upgrade
-opam pin add https://github.com/LPCIC/coq-elpi.git#fast-eqb
 opam install coq-deriving coq-equations
+opam pin add https://github.com/LPCIC/coq-elpi.git#fast-eqb
 ```
