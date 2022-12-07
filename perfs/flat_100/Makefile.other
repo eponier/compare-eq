@@ -1,0 +1,6 @@
+all:
+	lean --profile dec_eq.lean
+	$(MAKE) -C agda all
+
+clean:
+	$(MAKE) -C agda clean

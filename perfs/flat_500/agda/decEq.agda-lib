@@ -1,0 +1,4 @@
+name: decEq
+include: .
+depend:
+  generics
