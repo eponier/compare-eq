@@ -1,0 +1,70 @@
+COQDEP VFILES
+COQC type.v
+COQC scheme_equality.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+COQC decide_equality.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0.023 secs (0.011u,0.011s) (successful)
+     = false
+     : bool
+Finished transaction in 0.002 secs (0.001u,0.001s) (successful)
+COQC equations.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+COQC deriving.v
+Finished transaction in 0.128 secs (0.092u,0.035s) (successful)
+Finished transaction in 0.009 secs (0.009u,0.s) (successful)
+Finished transaction in 0.008 secs (0.008u,0.s) (successful)
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0.011 secs (0.011u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0.011 secs (0.011u,0.s) (successful)
+Finished transaction in 0.05 secs (0.05u,0.s) (successful)
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+COQC elpi_derive.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+COQC feqb.v
+correct 0.001422 0.001604 0.001689 refl 0.000421
+correct 0.001744 0.002011 0.002115 refl 0.000708
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
+     = false
+     : bool
+Finished transaction in 0. secs (0.u,0.s) (successful)
