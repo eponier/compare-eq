@@ -1,0 +1,63 @@
+lean --profile dec_eq.lean
+parsing took 0.164ms
+elaboration: tactic compilation took 3.65ms
+elaboration: tactic execution took 25ms
+num. allocated objects:  9867
+num. allocated closures: 8804
+   25ms   100.0%   tactic.mk_dec_eq_instance
+   25ms   100.0%   _private.639532715.all_goals'_core._main._lambda_2
+   25ms   100.0%   tactic.mk_dec_eq_instance_core._lambda_2
+   25ms   100.0%   _interaction._lambda_2
+   25ms   100.0%   tactic.istep
+   25ms   100.0%   scope_trace
+   25ms   100.0%   tactic.step
+   25ms   100.0%   tactic.with_ast
+   25ms   100.0%   tactic.istep._lambda_1
+   25ms   100.0%   _interaction
+   25ms   100.0%   all_goals'_core
+   25ms   100.0%   tactic.all_goals'
+   25ms   100.0%   interaction_monad.monad._lambda_8
+   25ms   100.0%   tactic.mk_dec_eq_instance_core
+   25ms   100.0%   dec_eq_case_1
+   21ms    84.0%   _private.3023105531.dec_eq_case_2._lambda_1
+   21ms    84.0%   dec_eq_case_2
+   18ms    72.0%   dec_eq_diff_constructor
+   12ms    48.0%   interaction_monad_orelse
+    9ms    36.0%   tactic.apply
+    9ms    36.0%   tactic.left
+    9ms    36.0%   tactic.contradiction
+    7ms    28.0%   tactic.apply_core
+    7ms    28.0%   contra_constructor_eq
+    4ms    16.0%   tactic.exact
+    3ms    12.0%   _private.743717707.dec_eq_same_constructor._main._lambda_1
+    3ms    12.0%   dec_eq_same_constructor
+    3ms    12.0%   tactic.mk_app
+    3ms    12.0%   tactic.cases
+    3ms    12.0%   tactic.cases_core
+    2ms     8.0%   tactic.has_opt_auto_param_for_apply._lambda_2
+    2ms     8.0%   tactic.right
+    1ms     4.0%   tactic.infer_type
+    1ms     4.0%   contra_false
+    1ms     4.0%   expr.is_napp_of
+    1ms     4.0%   tactic.mk_const
+    1ms     4.0%   tactic.whnf
+    1ms     4.0%   contra_p_not_p
+    1ms     4.0%   relation_tactic
+    1ms     4.0%   target'
+    1ms     4.0%   list.mfoldl._main._meta_aux._lambda_1
+    1ms     4.0%   expr.get_app_num_args
+    1ms     4.0%   _private.2427847625.relation_tactic._lambda_1
+elaboration of t_dec_eq took 34.7ms
+type checking of t_dec_eq took 6.37ms
+compilation of t_dec_eq took 4.14ms
+decl post-processing of t_dec_eq took 5.3ms
+make -C agda all
+make[1]: Entering directory '/home/jlechene/Documents/packages/compare-eq/perfs/flat_10/agda'
+rm -rf _build
+agda --safe -vprofile.definitions:10 decEq.agda
+Checking decEq (/home/jlechene/Documents/packages/compare-eq/perfs/flat_10/agda/decEq.agda).
+Total         20,977ms 
+Miscellaneous 20,455ms 
+decEq.tD         421ms 
+decEq.tDec       100ms 
+make[1]: Leaving directory '/home/jlechene/Documents/packages/compare-eq/perfs/flat_10/agda'

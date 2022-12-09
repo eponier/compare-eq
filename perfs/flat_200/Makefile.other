@@ -1,6 +1,6 @@
 all:
-	lean --profile dec_eq.lean
-	$(MAKE) -C agda all
+	#lean --profile dec_eq.lean MEM OVERFLOW
+	$(MAKE) -C agda all # default heap size too small
 
 clean:
 	$(MAKE) -C agda clean

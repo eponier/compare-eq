@@ -1,0 +1,142 @@
+lean --profile dec_eq.lean
+parsing took 0.0555ms
+elaboration: tactic compilation took 3.63ms
+elaboration: tactic execution took 30.3s
+num. allocated objects:  1019162
+num. allocated closures: 908723
+30251ms   100.0%   _interaction
+30251ms   100.0%   _interaction._lambda_2
+30251ms   100.0%   tactic.mk_dec_eq_instance_core._lambda_2
+30251ms   100.0%   tactic.istep
+30251ms   100.0%   scope_trace
+30251ms   100.0%   tactic.with_ast
+30251ms   100.0%   tactic.step
+30251ms   100.0%   tactic.mk_dec_eq_instance
+30251ms   100.0%   tactic.mk_dec_eq_instance_core
+30251ms   100.0%   tactic.istep._lambda_1
+30249ms   100.0%   tactic.all_goals'
+30249ms   100.0%   interaction_monad.monad._lambda_8
+30249ms   100.0%   all_goals'_core
+30249ms   100.0%   dec_eq_case_1
+30249ms   100.0%   _private.639532715.all_goals'_core._main._lambda_2
+29891ms    98.8%   dec_eq_case_2
+29805ms    98.5%   _private.3023105531.dec_eq_case_2._lambda_1
+29769ms    98.4%   dec_eq_diff_constructor
+28393ms    93.9%   tactic.contradiction
+28229ms    93.3%   interaction_monad_orelse
+27690ms    91.5%   contra_constructor_eq
+27005ms    89.3%   tactic.exact
+ 1031ms     3.4%   tactic.left
+  764ms     2.5%   tactic.apply
+  502ms     1.7%   tactic.apply_core
+  354ms     1.2%   tactic.mk_app
+  309ms     1.0%   tactic.intron
+  240ms     0.8%   tactic.whnf
+  235ms     0.8%   tactic.cases
+  220ms     0.7%   tactic.cases_core
+  202ms     0.7%   tactic.infer_type
+  173ms     0.6%   contra_false
+  166ms     0.5%   tactic.has_opt_auto_param_for_apply._lambda_2
+  152ms     0.5%   tactic.try
+  148ms     0.5%   contra_not_a_refl_rel_a
+  144ms     0.5%   tactic.intro
+  131ms     0.4%   tactic.get_constructors_for
+  126ms     0.4%   contra_p_not_p
+  120ms     0.4%   expr.is_napp_of
+  115ms     0.4%   expr.get_app_fn
+  108ms     0.4%   expr.extract_opt_auto_param
+   93ms     0.3%   expr.const
+   69ms     0.2%   tactic.mk_const
+   65ms     0.2%   environment.is_constructor_app
+   62ms     0.2%   target'
+   61ms     0.2%   expr.is_app_of
+   55ms     0.2%   expr.app
+   55ms     0.2%   get_lhs_rhs
+   53ms     0.2%   tactic.whnf_target
+   51ms     0.2%   _private.31396299.contra_not_a_refl_rel_a._main._lambda_1
+   50ms     0.2%   tactic.intro_core
+   42ms     0.1%   tactic.try_apply_opt_auto_param_for_apply
+   40ms     0.1%   tactic.match_ne
+   35ms     0.1%   tactic.match_eq
+   32ms     0.1%   interaction_monad.fail
+   29ms     0.1%   expr.is_eq
+   29ms     0.1%   tactic.target
+   27ms     0.1%   tactic.set_goals
+   25ms     0.1%   dec_eq_same_constructor
+   24ms     0.1%   _private.743717707.dec_eq_same_constructor._main._lambda_1
+   23ms     0.1%   list.mfoldl._main._meta_aux._lambda_1
+   23ms     0.1%   tactic.mk_const._lambda_1
+   22ms     0.1%   interaction_monad.monad
+   22ms     0.1%   environment.is_constructor
+   21ms     0.1%   interaction_monad.mk_exception
+   20ms     0.1%   tactic.is_assigned
+   20ms     0.1%   tactic.has_opt_auto_param_for_apply
+   19ms     0.1%   expr.get_app_num_args
+   19ms     0.1%   expr.const_name
+   18ms     0.1%   expr.is_constant_of
+   18ms     0.1%   tactic.match_not
+   18ms     0.1%   list.mfoldl
+   17ms     0.1%   _private.31396299.contra_not_a_refl_rel_a._main._lambda_2
+   17ms     0.1%   mcond
+   17ms     0.1%   expr.is_ne
+   16ms     0.1%   tactic.right
+   15ms     0.0%   cases_postprocess
+   15ms     0.0%   environment.get
+   15ms     0.0%   tactic.failed
+   14ms     0.0%   tactic.get_env
+   14ms     0.0%   bool.decidable_eq
+   14ms     0.0%   name.has_decidable_eq
+   14ms     0.0%   environment.is_inductive
+   14ms     0.0%   list.map
+   13ms     0.0%   mwhen
+   12ms     0.0%   ne.decidable
+   12ms     0.0%   interaction_monad.failed
+   11ms     0.0%   tactic.local_context
+   10ms     0.0%   _private.2583261467.cases_postprocess._lambda_2
+    9ms     0.0%   _private.2075907765.contra_p_not_p._main._lambda_1
+    9ms     0.0%   environment.constructors_of
+    8ms     0.0%   relation_tactic
+    8ms     0.0%   tactic.fail
+    8ms     0.0%   expr.is_let
+    8ms     0.0%   _private.2427847625.relation_tactic._lambda_1
+    7ms     0.0%   tactic.change
+    7ms     0.0%   when
+    7ms     0.0%   expr.is_not
+    7ms     0.0%   expr.sort
+    6ms     0.0%   interaction_monad.monad._lambda_3
+    5ms     0.0%   tactic_state.env
+    5ms     0.0%   decidable.to_bool
+    5ms     0.0%   expr.has_decidable_eq
+    5ms     0.0%   tactic.head_beta
+    5ms     0.0%   list.append
+    5ms     0.0%   expr.is_constant
+    4ms     0.0%   tactic.instantiate_mvars
+    4ms     0.0%   declaration.univ_params
+    4ms     0.0%   and.decidable
+    4ms     0.0%   name.get_prefix
+    3ms     0.0%   tactic.get_goals
+    3ms     0.0%   name.mk_string
+    3ms     0.0%   nat.decidable_eq
+    3ms     0.0%   tactic.mk_num_meta_univs
+    2ms     0.0%   expr.is_false
+    2ms     0.0%   tactic.returnex
+    2ms     0.0%   implies.decidable
+    1ms     0.0%   mcond._lambda_1
+    1ms     0.0%   list.filter
+    1ms     0.0%   expr.is_pi
+    1ms     0.0%   list.length
+elaboration of t_dec_eq took 34s
+type checking of t_dec_eq took 28.4s
+compilation of t_dec_eq took 611ms
+decl post-processing of t_dec_eq took 22.1s
+make -C agda all
+make[1]: Entering directory '/home/jlechene/Documents/packages/compare-eq/perfs/flat_100/agda'
+rm -rf _build
+agda --safe -vprofile.definitions:10 decEq.agda
+Checking decEq (/home/jlechene/Documents/packages/compare-eq/perfs/flat_100/agda/decEq.agda).
+Total         53,692ms 
+Miscellaneous 28,489ms 
+decEq.tD      24,084ms 
+decEq.tDec     1,076ms 
+decEq.t           42ms 
+make[1]: Leaving directory '/home/jlechene/Documents/packages/compare-eq/perfs/flat_100/agda'
