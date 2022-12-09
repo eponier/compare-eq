@@ -14,10 +14,10 @@ COQC decide_equality.v
      : bool
      = true
      : bool
-Finished transaction in 16.514 secs (16.314u,0.155s) (successful)
+Finished transaction in 1.044 secs (0.928u,0.113s) (successful)
      = false
      : bool
-Finished transaction in 2.68 secs (2.569u,0.103s) (successful)
+Finished transaction in 0.057 secs (0.057u,0.s) (successful)
 COQC equations.v
      = false
      : bool

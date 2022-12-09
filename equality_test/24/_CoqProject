@@ -2,7 +2,7 @@
 
 type.v
 scheme_equality.v
-# decide_equality.v MEM OVERFLOW
+decide_equality.v
 equations.v
 deriving.v
 elpi_derive.v

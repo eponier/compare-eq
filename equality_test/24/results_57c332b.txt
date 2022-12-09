@@ -9,8 +9,15 @@ Finished transaction in 1.728 secs (1.725u,0.s) (successful)
      = false
      : bool
 Finished transaction in 2.259 secs (2.254u,0.s) (successful)
-COQDEP VFILES
-coq_makefile -f _CoqProject -o Makefile
+COQC decide_equality.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 15.254 secs (14.702u,0.509s) (successful)
+     = false
+     : bool
+Finished transaction in 3.186 secs (2.653u,0.521s) (successful)
 COQC equations.v
      = false
      : bool

@@ -7,6 +7,15 @@ Finished transaction in 3.474 secs (3.466u,0.s) (successful)
      = false
      : bool
 Finished transaction in 4.611 secs (4.6u,0.s) (successful)
+COQC decide_equality.v
+     = false
+     : bool
+     = true
+     : bool
+Finished transaction in 27.898 secs (26.798u,1.028s) (successful)
+     = false
+     : bool
+Finished transaction in 5.455 secs (4.497u,0.941s) (successful)
 COQC equations.v
      = false
      : bool

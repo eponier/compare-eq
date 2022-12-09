@@ -14,7 +14,7 @@ COQC decide_equality.v
      : bool
      = true
      : bool
-Finished transaction in 0.006 secs (0.001u,0.005s) (successful)
+Finished transaction in 0. secs (0.u,0.s) (successful)
      = false
      : bool
 Finished transaction in 0. secs (0.u,0.s) (successful)
